@@ -1,7 +1,17 @@
-ORG 0x7c00
+ORG 0
 BITS 16
 
+jmp 0x7c0:start
+
 start:
+	cli ;Clear interrupts
+	mov ax, 0x7c0
+	mov ds, ax
+	mov es, ax
+	mov ax, 0x00
+	mov ss, ax
+	mov sp, 0x7c00
+	sti ;Enables interrupts
 	mov si, message
 	call print
 	jmp $
@@ -12,15 +22,15 @@ print:
 .loop:
 	lodsb
 	cmp al,0
-	je.done
+	je .done
 	call print_char
-	jmp.loop
+	jmp .loop
 
 .done:
 	ret
 
 print_char:
-	moc ah, 0eh
+	mov ah, 0eh
 	int 0x10
 	ret
 
