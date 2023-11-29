@@ -9,3 +9,4 @@ Hence adding a manual segmentation model forces the system to load the bootloade
 ### Interrupt
 Implemented own interrupt using Interrupt Vector Table that prints "A", whenever invoked. Defined int 0, by changing the address it points to.
 ![Screenshot from 2023-11-29 13-14-58](https://github.com/abid-sayyad/ApricotOS/assets/49099853/3a0e11a5-2286-4330-ac6a-b95b6add951f)
+Also added interrupt '1', which prints "V" when invoked.
