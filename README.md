@@ -7,5 +7,5 @@ Hence adding a manual segmentation model forces the system to load the bootloade
 ![Screenshot from 2023-11-28 04-29-05](https://github.com/abid-sayyad/ApricotOS/assets/49099853/33f11404-528e-4502-a99c-95f8e9513441)
 
 ### Interrupt
-Implemented own interrupt (0) using Interrupt Vector Table that prints "A", whenever invoked
+Implemented own interrupt using Interrupt Vector Table that prints "A", whenever invoked. Defined int 0, by changing the address it points to.
 ![Screenshot from 2023-11-29 13-14-58](https://github.com/abid-sayyad/ApricotOS/assets/49099853/3a0e11a5-2286-4330-ac6a-b95b6add951f)
