@@ -14,8 +14,8 @@ Implemented own interrupt using Interrupt Vector Table that prints "A", whenever
 Also added interrupt '1', which prints "V" when invoked.
 pipi
 ### Reading from the hard disk
-Utilising the makefile for automating the build process.
-![alt text](<Screenshot from 2024-04-20 14-21-15.png>)
-Reads from the virual hard disk, boot.bin in out case. The file message.txt is read from the virtual hard disk. exploring the Disk read interrupt "13h" for performing
+Utilizing the makefile for automating the build process.
+![Screenshot from 2024-04-20 14-21-15](https://github.com/abid-sayyad/ApricotOS/assets/49099853/900c99e0-5619-47ad-8587-3c176bfdad7b)
+Reads from the virtual hard disk, boot.bin in our case. The file message.txt is read from the virtual hard disk. exploring the Disk read interrupt "13h" for performing
 data read operations. Also printing a sector at the end of the message, after it is read and printed.
-![alt text](<Screenshot from 2024-04-20 14-22-33.png>)
+![Screenshot from 2024-04-20 14-22-33](https://github.com/abid-sayyad/ApricotOS/assets/49099853/a21410e0-1ab7-4699-b6bb-b0265cb0fbf7)
