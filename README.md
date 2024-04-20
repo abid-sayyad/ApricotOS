@@ -9,3 +9,10 @@ Hence adding a manual segmentation model forces the system to load the bootloade
 ### Interrupt
 Implemented own interrupt using Interrupt Vector Table that prints "A", whenever invoked. Defined int 0, by changing the address it points to.
 ![Screenshot from 2023-11-29 13-14-58](https://github.com/abid-sayyad/ApricotOS/assets/49099853/3a0e11a5-2286-4330-ac6a-b95b6add951f)
+
+### Reading from the hard disk
+Utilising the makefile for automating the build process.
+![alt text](<Screenshot from 2024-04-20 14-21-15.png>)
+Reads from the virual hard disk, boot.bin in out case. The file message.txt is read from the virtual hard disk. exploring the Disk read interrupt "13h" for performing
+data read operations. Also printing a sector at the end of the message, after it is read and printed.
+![alt text](<Screenshot from 2024-04-20 14-22-33.png>)
